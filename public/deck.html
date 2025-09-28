@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deck Detail</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- TinyMCE -->
+<script src="https://cdn.jsdelivr.net/npm/tinymce@6/tinymce.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+  <h1 id="deck-title">Deck</h1>
+
+  <!-- Back to home -->
+  <div class="nav-bar">
+    <button class="btn-back" onclick="window.location.href='index.html'">← Back</button>
+  </div>
+
+  <!-- Study button -->
+  <div class="study-btn-container">
+    <button id="study-btn" class="btn-study">Study Cards</button>
+  </div>
+
+
+  <!-- Add card -->
+  <h2>Add Card</h2>
+  <form id="card-form" autocomplete="off">
+    <label>Questions</label>
+    <input type="text" id="card-question" placeholder="Question" required>
+
+    <label>Answer</label>
+    <textarea id="card-answer"></textarea>
+
+    <label>Tags (add one at a time)</label>
+    <div id="tag-section">
+      <input type="text" id="tag-search" placeholder="Type to search or add tag">
+      <button type="button" id="add-tag-btn">Add Tag</button>
+      <div id="tag-suggestions"></div>
+    </div>
+    <div id="tag-list"></div>
+
+    <button type="submit">Add Card</button>
+  </form>
+
+  <!-- Cards table -->
+  <h2>Cards List</h2>
+
+  <input type="text" id="search-bar" placeholder="Search by question or tags">
+
+  <table id="cards-table">
+    <thead>
+      <tr>
+        <th>Question</th>
+        <th>Answer</th>
+        <th>Tags</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<!-- Table overlay (hidden by default) -->
+<div id="table-overlay" class="overlay">
+  <div class="overlay-content">
+    <span class="overlay-close">&times;</span>
+    <div id="overlay-table-container"></div>
+  </div>
+</div>
+
+
+<script src="deck.js"></script>
+</body>
+</html>

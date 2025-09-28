@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study Cards</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1 id="deck-title">Deck</h1>
+  
+  <!-- Back to deck -->
+  <div class="nav-bar">
+    <button id="back-btn" class="btn-back">← Back</button>
+  </div>
+
+  <!-- Navigation + Progress row -->
+  <div class="card-controls">
+    <button id="prev-btn">← Previous</button>
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress-bar-fill"></div>
+      </div>
+      <div class="progress-text" id="progress-text"></div>
+    </div>
+    <button id="next-btn">Next →</button>
+  </div>
+
+  <!-- Tag filter -->
+  <div class="tag-filter-container">
+    <label>Select tags to filter:</label>
+    <div id="tag-filters"></div>
+  </div>
+
+
+  <!-- Flashcard -->
+  <div id="card-container">
+    <div class="flashcard" id="flashcard">
+      <div class="flashcard-inner">
+        <div class="flashcard-front" id="card-front"></div>
+        <div class="flashcard-back" id="card-back"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="cards.js"></script>
+</body>
+</html>

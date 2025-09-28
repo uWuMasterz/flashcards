@@ -1,0 +1,546 @@
+html {
+  overflow-y: scroll; /* Always show vertical scrollbar */
+}
+
+/* Body & container */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Forms */
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"], textarea {
+  padding: 10px;
+  margin-right: 10px;
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 120px; /* increased height */
+  margin-top: 5px;
+  resize: vertical;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+/* Temporary tags */
+#tag-list {
+  margin-top: 5px;
+}
+
+.temp-tag {
+  display: inline-block;
+  background-color: #e0e0e0;   /* light gray */
+  color: #333;
+  padding: 6px 10px;
+  margin: 4px 4px 4px 4px;         /* spacing between tags */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.temp-tag:hover {
+  background-color: #c8c8c8;
+}
+
+/* Tag section */
+#tag-section {
+  display: flex;
+  gap: 10px;          /* space between input and button */
+  align-items: center; /* vertical center */
+  position: relative;
+  margin-top: 5px;
+}
+
+#tag-search {
+  flex: 1;             /* take remaining space */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#add-tag-btn {
+  flex-shrink: 0;     /* prevent shrinking */
+  padding: 10px 16px;
+  background-color: #009688;  /* green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+#add-tag-btn:hover {
+  background-color: #00796B;
+}
+
+/* Suggestion box */
+#tag-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 120px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.suggestion-item {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f2f2f2;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #tag-section {
+    flex-direction: column;
+  }
+  #add-tag-btn {
+    margin-top: 5px;
+  }
+}
+
+/* Flashcard */
+.flashcard {
+  perspective: 1000px;
+  width: 800px;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.flashcard-inner {
+  width: 100%;
+  align-items: center;
+  text-align: left;
+  transition: transform 0.6s, height 0.3s, width 0.3s;
+  transform-style: preserve-3d;
+  position: relative;
+  margin: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  height: 200px; /* initial height = front height */
+}
+
+.flashcard-front {
+  backface-visibility: hidden;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  height: 200px; /* fixed front height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  white-space: pre-wrap;
+  box-sizing: border-box;
+}
+
+
+.flashcard.flipped .flashcard-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flashcard-back {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  background-color: #f0f0f0;
+  position: absolute; /* must remain absolute for 3D flip */
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 200px;
+  display: flex;               /* flex for centering */
+  justify-content: flex-start; /* left aligned horizontally */
+  align-items: center;         /* vertical centering */
+  padding: 10px;
+  border-radius: 8px;
+  white-space: normal;         /* allow proper wrapping */
+  box-sizing: border-box;
+  text-align: left;            /* make text left aligned */
+}
+
+.flashcard-back > div {
+  width: 100%;   /* dynamic content stretches */
+}
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 768px) {
+  .flashcard {
+    width: 100%;   /* Full width on mobile */
+    margin: 10px;  /* Reduce margin */
+  }
+
+  .flashcard-inner {
+    width: 100%;
+    height: auto;  /* Allow the card to expand vertically based on content */
+  }
+
+  .flashcard-front,
+  .flashcard-back {
+    height: auto;  /* Allow content to stretch */
+    padding: 15px; /* More padding on mobile for better touch */
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+
+  .flashcard-back > div {
+    width: auto;   /* Content should not be restricted to a fixed width */
+  }
+}
+
+
+/* Card controls row (prev button, progress bar, next button) */
+.card-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.card-controls button {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.card-controls button:hover {
+  background-color: #45a049;
+}
+
+.progress-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 10px;
+  position: relative;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  width: 0%;
+  background-color: #4CAF50;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  min-width: 80px;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Flashcard container */
+#card-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Tag filter buttons */
+.tag-filter-container {
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.tag-btn {
+  padding: 5px 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.tag-btn.selected {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.tag-btn:hover {
+  background-color: #ccc;
+}
+
+/* Action buttons */
+td button {
+  margin-right: 8px; /* spacing between buttons */
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: #ff9800; /* orange */
+}
+
+.btn-edit:hover {
+  background-color: #e68900;
+}
+
+.btn-delete {
+  background-color: #f44336; /* red */
+}
+
+.btn-delete:hover {
+  background-color: #d32f2f;
+}
+
+/* Back button */
+.btn-back {
+  background-color: #777;   /* neutral gray */
+  color: white;
+  padding: 8px 14px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-back:hover {
+  background-color: #555;
+}
+
+/* Navigation bar container */
+.nav-bar {
+  margin-bottom: 20px; /* space below the back button */
+}
+
+/* Inputs & textareas */
+input[type="text"], 
+textarea {
+  padding: 12px;              /* more padding inside */
+  margin: 8px 0;              /* space above/below */
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* TinyMCE editor area also gets padding */
+.tox-tinymce {
+  margin: 8px 0;              /* spacing around editor */
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Study button container - center the button */
+.study-btn-container {
+  text-align: center;
+  margin: 20px 0; /* spacing above & below */
+}
+
+/* Study button styling */
+.btn-study {
+  background-color: #2196F3; /* orange */
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-study:hover {
+  background-color: #2196F3; /* darker orange on hover */
+  transform: scale(1.05);
+}
+
+/* Current Filter Container */
+.current-filter-container {
+  display: block;
+  width: 100%;
+  margin-top: 15px; /* add some space from the tags above */
+  clear: both; /* ensures it starts on a new line if floats are involved */
+}
+
+.filter-connector {
+  padding: 3px 8px;
+  border-radius: 4px;
+  user-select: none;
+  font-size: 14px;
+  color: white;
+}
+
+.filter-connector:hover {
+  opacity: 0.8;
+}
+
+.filter-connector:active {
+  transform: scale(0.95);
+}
+
+.filter-connector[data-mode="AND"] {
+  background-color: #4caf50; /* green */
+}
+
+.filter-connector[data-mode="OR"] {
+  background-color: #f57c00; /* orange */
+}
+
+/* Cards table layout */
+#cards-table {
+  width: 100%;
+  table-layout: fixed; /* needed for controlling widths */
+  border-collapse: collapse;
+}
+
+#cards-table th,
+#cards-table td {
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  text-align: left;
+  vertical-align: top;
+  padding: 10px;
+}
+
+/* Column widths */
+#cards-table th:nth-child(1),
+#cards-table td:nth-child(1) { /* Question */
+  width: 20%;
+}
+
+#cards-table th:nth-child(2),
+#cards-table td:nth-child(2) { /* Answer */
+  width: auto;       /* expand as much as possible */
+  white-space: normal;
+}
+
+#cards-table th:nth-child(3),
+#cards-table td:nth-child(3) { /* Tags */
+  width: 15%;
+}
+
+#cards-table th:nth-child(4),
+#cards-table td:nth-child(4) { /* Actions */
+  width: 10%;
+}
+
+/* Overlay background */
+#table-overlay.overlay {
+  display: none; /* hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Overlay content box */
+#table-overlay .overlay-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 90%;
+  max-height: 80%;
+  overflow: auto;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Close button */
+.overlay-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #444;
+  background: #f0f0f0;
+  border-radius: 50%;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.overlay-close:hover {
+  background: #ff4d4d;
+  color: white;
+}

@@ -1,0 +1,729 @@
+{
+  "decks": [
+    {
+      "id": "1",
+      "name": "Sample Deck",
+      "cards": [
+        {
+          "id": "101",
+          "question": "What is AWS?",
+          "answer": "Amazon Web Services",
+          "tags": [
+            "cloud",
+            "aws"
+          ]
+        },
+        {
+          "id": "1757063434071",
+          "question": "as",
+          "answer": "afsfas",
+          "tags": [
+            "cloud"
+          ]
+        },
+        {
+          "id": "1757063440358",
+          "question": "asf",
+          "answer": "awd",
+          "tags": [
+            "aws"
+          ]
+        },
+        {
+          "id": "1757179374522",
+          "question": "Yo",
+          "answer": "<p>AVDS</p>",
+          "tags": [
+            "aws"
+          ]
+        },
+        {
+          "id": "1757179729965",
+          "question": "compare",
+          "answer": "<table style=\"border-collapse: collapse; width: 100%; height: 67.1874px;\" border=\"1\"><colgroup><col style=\"width: 25%;\"><col style=\"width: 25%;\"><col style=\"width: 25%;\"><col style=\"width: 25%;\"></colgroup>\n<tbody>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">wrasasdf</td>\n<td style=\"height: 22.3958px;\">asdfa</td>\n<td style=\"height: 22.3958px;\">Zd</td>\n<td style=\"height: 22.3958px;\">qwras</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">asd</td>\n<td style=\"height: 22.3958px;\">zxdga</td>\n<td style=\"height: 22.3958px;\">asdf</td>\n<td style=\"height: 22.3958px;\">qwe</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n<td>&nbsp;</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">asgd</td>\n<td style=\"height: 22.3958px;\">asd</td>\n<td style=\"height: 22.3958px;\">z</td>\n<td style=\"height: 22.3958px;\">w</td>\n</tr>\n</tbody>\n</table>",
+          "tags": [
+            "aws"
+          ]
+        },
+        {
+          "id": "1757264770168",
+          "question": "qwf",
+          "answer": "<table style=\"border-collapse: collapse; width: 100%;\" border=\"1\"><colgroup><col style=\"width: 33.3333%;\"><col style=\"width: 33.3333%;\"><col style=\"width: 33.3333%;\"></colgroup>\n<tbody>\n<tr>\n<td><strong>dsgZ</strong></td>\n<td>as</td>\n<td>nc</td>\n</tr>\n<tr>\n<td><em>sa</em></td>\n<td>asfd</td>\n<td>zw</td>\n</tr>\n<tr>\n<td><span style=\"text-decoration: underline;\">asal</span></td>\n<td>&nbsp;</td>\n<td>qwt</td>\n</tr>\n</tbody>\n</table>",
+          "tags": [
+            "cloud"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1757312460401",
+      "name": "AWS Solution Architect - Associate",
+      "cards": [
+        {
+          "id": "1757327794499",
+          "question": "Factors for Choosing Region",
+          "answer": "<ul>\n<li>Compliance</li>\n<li>Proximity to customer</li>\n<li>Available services</li>\n<li>Pricing</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "AWS"
+          ]
+        },
+        {
+          "id": "1757327814072",
+          "question": "IAM Users & Groups",
+          "answer": "<p><span style=\"text-decoration: underline;\"><strong>Users</strong></span></p>\n<ul>\n<li>Can be assigned to IAM Groups</li>\n<li>Don't have to belong to any IAM Groups</li>\n<li>Can belong to multiple IAM Groups</li>\n</ul>\n<p><span style=\"text-decoration: underline;\"><strong>Groups</strong></span></p>\n<ul>\n<li>Contain IAM Users</li>\n<li>Cannot be in another IAM Groups</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "IAM"
+          ]
+        },
+        {
+          "id": "1757327878124",
+          "question": "IAM Credential Report",
+          "answer": "<ul>\n<li>Account-Level</li>\n<li>List all of account's users and the status of their credential</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "IAM"
+          ]
+        },
+        {
+          "id": "1757327893373",
+          "question": "IAM Acces Advisor",
+          "answer": "<ul>\n<li>User-Level</li>\n<li>Show permissions granted and when those services are last accessed</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "IAM"
+          ]
+        },
+        {
+          "id": "1757327908328",
+          "question": "EC2 Configuration Options",
+          "answer": "<ul>\n<li>Operating System <strong>(OS)</strong>: Linux, Windows, MacOS</li>\n<li>Compute Power &amp; Cores <strong>(CPU)</strong></li>\n<li>Random Access Memory <strong>(RAM</strong></li>\n<li>Storage Space\n<ul>\n<li>Network-Attached: <strong>(EBS &amp; EFS)</strong></li>\n<li>Hardware: <strong>EC2 Instance Store</strong></li>\n</ul>\n</li>\n<li>Network Card:&nbsp;<strong>Elastic Network Interface (ENI)</strong></li>\n<li>Firewall Rules:&nbsp;<strong>Security Group</strong></li>\n<li>Bootstrap Script:<strong> EC2 User Data</strong></li>\n</ul>",
+          "tags": [
+            "Concept",
+            "EC2"
+          ]
+        },
+        {
+          "id": "1757329879572",
+          "question": "EC2 User Data",
+          "answer": "<ul>\n<li>Launch commands when EC2 instance starts</li>\n<li><strong>Only run once</strong> when instance <strong>starts for first time</strong></li>\n<li>Run with <strong>root user</strong> privilege</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "EC2"
+          ]
+        },
+        {
+          "id": "1757330627312",
+          "question": "EC2 Instance Types",
+          "answer": "<table style=\"border-collapse: collapse; width: 100.039%; height: 247.167px;\" border=\"1\"><colgroup><col style=\"width: 50%;\"><col style=\"width: 50%;\"></colgroup>\n<tbody>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px; background-color: rgb(206, 212, 217);\"><span style=\"text-decoration: underline;\"><strong>Instance Type</strong></span></td>\n<td style=\"height: 22.3958px; background-color: rgb(206, 212, 217);\"><span style=\"text-decoration: underline;\"><strong>Use Case</strong></span></td>\n</tr>\n<tr style=\"height: 80.7917px;\">\n<td style=\"height: 80.7917px;\"><strong>General Purpose</strong></td>\n<td style=\"height: 80.7917px;\">\n<ul>\n<li>Web Servers</li>\n<li>General Workload</li>\n</ul>\n</td>\n</tr>\n<tr style=\"height: 99.1875px;\">\n<td style=\"height: 99.1875px;\"><strong>Compute Optimized</strong></td>\n<td style=\"height: 99.1875px;\">\n<ul>\n<li>Compute intensived, high performance</li>\n<li>Batch / High Performance Computing / Machine Learning</li>\n</ul>\n</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\"><strong>Memory Optimized</strong></td>\n<td style=\"height: 22.3958px;\">\n<ul>\n<li>Fast performance on process that require large data in memory</li>\n<li>In-memory database</li>\n</ul>\n</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\"><strong>Storage Optimized</strong></td>\n<td style=\"height: 22.3958px;\">\n<ul>\n<li>Storage-intensive task, high read/write access&nbsp;</li>\n<li>High Frequency Online Transaction (OLTP)</li>\n</ul>\n</td>\n</tr>\n</tbody>\n</table>\n<p>&nbsp;</p>",
+          "tags": [
+            "Concept",
+            "Compare",
+            "EC2"
+          ]
+        },
+        {
+          "id": "1757398601584",
+          "question": "Classic Ports",
+          "answer": "<ul>\n<li>22 = SSH</li>\n<li>21 = FTP</li>\n<li>22 = SFTP</li>\n<li>80 = HTTP</li>\n<li>443 = HTTPS</li>\n<li>3389 = Remote Desktop Protocol (RDP)</li>\n</ul>",
+          "tags": [
+            "Concept"
+          ]
+        },
+        {
+          "id": "1757401608615",
+          "question": "EC2 Purchasing Options",
+          "answer": "<table style=\"border-collapse: collapse; width: 100.039%; height: 223.958px;\" border=\"1\"><colgroup><col style=\"width: 49.9411%;\"><col style=\"width: 49.9411%;\"></colgroup>\n<tbody>\n<tr style=\"height: 22.3958px;\">\n<td style=\"background-color: rgb(206, 212, 217); height: 22.3958px;\">Purchasing Options</td>\n<td style=\"background-color: rgb(206, 212, 217); height: 22.3958px;\">Description</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">On-Demand</td>\n<td style=\"height: 22.3958px;\">Pay by second</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Reserved Instances (Standard)</td>\n<td style=\"height: 22.3958px;\">Commit to pay 24/7 for 1 or 3 years, fixed instance family</td>\n</tr>\n<tr style=\"height: 44.7917px;\">\n<td style=\"height: 44.7917px;\">Reserved Instances (Convertible)</td>\n<td style=\"height: 44.7917px;\">Commit to pay 24/7 for 1 or 3 years, can change instance family</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Savings Plans</td>\n<td style=\"height: 22.3958px;\">Commit to pay certain amount for 1 or 3 years</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Spot Instances</td>\n<td style=\"height: 22.3958px;\">Short workload, cheapest, interruptable</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Dedicated Host</td>\n<td style=\"height: 22.3958px;\">Dedicated physical server</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Dedicated Instance</td>\n<td style=\"height: 22.3958px;\">Dedicated instance but no control over physical server</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Capacity Reservation</td>\n<td style=\"height: 22.3958px;\">Guarantee compute capacity availability</td>\n</tr>\n</tbody>\n</table>",
+          "tags": [
+            "Compare",
+            "EC2",
+            "Concept"
+          ]
+        },
+        {
+          "id": "1757407176310",
+          "question": "EC2 Dedicated Instance VS Dedicated Host",
+          "answer": "<table style=\"border-collapse: collapse; width: 100.039%; height: 201.562px;\" border=\"1\"><colgroup><col style=\"width: 33.3595%;\"><col style=\"width: 33.3595%;\"><col style=\"width: 33.2416%;\"></colgroup>\n<tbody>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">&nbsp;</td>\n<td style=\"height: 22.3958px;\">Dedicated Instance</td>\n<td style=\"height: 22.3958px;\">Dedicated Host</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Physical Server Control</td>\n<td style=\"height: 22.3958px;\">No</td>\n<td style=\"height: 22.3958px;\">Yes</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Instance Placement Control</td>\n<td style=\"height: 22.3958px;\">No</td>\n<td style=\"height: 22.3958px;\">Yes</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Licensing</td>\n<td style=\"height: 22.3958px;\">Limited licensing support</td>\n<td style=\"height: 22.3958px;\">BYOL, licensing per core/socket</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Pricing</td>\n<td style=\"height: 22.3958px;\">Per instance</td>\n<td style=\"height: 22.3958px;\">Per physical host</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Complicance</td>\n<td style=\"height: 22.3958px;\">For basic isolation</td>\n<td style=\"height: 22.3958px;\">For strict compliance</td>\n</tr>\n</tbody>\n</table>",
+          "tags": [
+            "Compare",
+            "EC2"
+          ]
+        },
+        {
+          "id": "1757407440714",
+          "question": "EC2 Spot Fleet",
+          "answer": "<ul>\n<li>Set of Spot Instance</li>\n<li>Launch instances until reach target capacity within price constrain</li>\n<li>Launch Strategies:\n<ul>\n<li><strong>PriceCapacityOptimized:</strong> Highest capacity available, select pool with lowest price&nbsp;</li>\n<li><strong>Lowest Price:</strong> Launch instance with lowest price</li>\n<li><strong>Diversified: </strong>Distribute across different launch pools</li>\n<li><strong>CapacityOptimized: </strong>optimal capacity for number of instances</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "EC2"
+          ]
+        },
+        {
+          "id": "1757411220185",
+          "question": "EC2 Placement Groups",
+          "answer": "<table style=\"border-collapse: collapse; width: 100%; height: 179.167px;\" border=\"1\"><colgroup><col style=\"width: 20.0472%;\"><col style=\"width: 25%;\"><col style=\"width: 18.0416%;\"><col style=\"width: 17.0999%;\"><col style=\"width: 19.8113%;\"></colgroup>\n<tbody>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">&nbsp;</td>\n<td style=\"height: 22.3958px;\">Description</td>\n<td style=\"height: 22.3958px;\">Pros</td>\n<td style=\"height: 22.3958px;\">Cons</td>\n<td style=\"height: 22.3958px;\">Use Cases</td>\n</tr>\n<tr style=\"height: 44.7917px;\">\n<td style=\"height: 44.7917px;\">Cluster</td>\n<td style=\"height: 44.7917px;\">Close together on same harware rack</td>\n<td style=\"height: 44.7917px;\">Fast, low latency</td>\n<td style=\"height: 44.7917px;\">If rack fails, all instance fails</td>\n<td style=\"height: 44.7917px;\">Big Data job, <br>Low latency</td>\n</tr>\n<tr style=\"height: 44.7917px;\">\n<td style=\"height: 44.7917px;\">Spread</td>\n<td style=\"height: 44.7917px;\">Each instance on distinct racks</td>\n<td style=\"height: 44.7917px;\">High availability<br>Reduced risk</td>\n<td style=\"height: 44.7917px;\">Max 7 instance per AZ</td>\n<td style=\"height: 44.7917px;\">High availability,<br>Isolation</td>\n</tr>\n<tr style=\"height: 67.1875px;\">\n<td style=\"height: 67.1875px;\">Partition</td>\n<td style=\"height: 67.1875px;\">Divide into logical partition. Distinct partition = Distinct racks</td>\n<td style=\"height: 67.1875px;\">\n<p>Each partition is isolated<br>Large no. instances</p>\n</td>\n<td style=\"height: 67.1875px;\">Max 7 partition per AZ<br>Instances in same partition are close</td>\n<td style=\"height: 67.1875px;\">HDFS, Cassandra, Kafka</td>\n</tr>\n</tbody>\n</table>",
+          "tags": [
+            "Concept",
+            "Compare"
+          ]
+        },
+        {
+          "id": "1757411706866",
+          "question": "Elastic IP",
+          "answer": "<ul>\n<li>Fixed Public IP for instance</li>\n<li>Created EIP lasts until user delete (Doesn't expire)</li>\n<li>Attach to one instance at a time</li>\n<li>Avoid using Elastic IPs</li>\n<li><strong>Free:</strong> for running instances, NAT Gateway</li>\n<li><strong>Charged:</strong> Unassociated EIP or stopped instances</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "Network"
+          ]
+        },
+        {
+          "id": "1757412018416",
+          "question": "EC2 Hibernate",
+          "answer": "<ul>\n<li>RAM state preserved (data stored in root EBS volume)</li>\n<li>Instance boot is much faster</li>\n<li>Root EBS must be encryped</li>\n<li>Cannot be hibernated &gt;60 days</li>\n<li>Use Case\n<ul>\n<li>Long-running process</li>\n<li>Save RAM state</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "EC2"
+          ]
+        },
+        {
+          "id": "1757414599563",
+          "question": "EC2 Instance Store",
+          "answer": "<ul>\n<li>Hardware storage</li>\n<li>High Performance</li>\n<li>Lose storage if instance is stopped</li>\n<li>Use Case\n<ul>\n<li>High I/O performance</li>\n<li>Caching</li>\n<li>Intermediate file processing</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "EC2",
+            "Instance Store"
+          ]
+        },
+        {
+          "id": "1757414734205",
+          "question": "Security Group",
+          "answer": "<ul>\n<li style=\"font-weight: bold;\"><strong>STATEFUL</strong></li>\n<li>Only contain <strong>ALLOW</strong> rules</li>\n<li>Regulate:\n<ul>\n<li>Access to Ports</li>\n<li>Authorised IP ranges</li>\n</ul>\n</li>\n<li>Reference Type:\n<ul>\n<li>IP address</li>\n<li>Security Groups (e.g only SG-A can access)</li>\n</ul>\n</li>\n<li>Inbound: all traffic blocked by default</li>\n<li>Outbound: all traffic authorised by default</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "Security Group"
+          ]
+        },
+        {
+          "id": "1757415611907",
+          "question": "IAM Policy Structure",
+          "answer": "<p><span style=\"text-decoration: underline;\"><strong>Main Structure</strong></span></p>\n<ol>\n<li>Version</li>\n<li>ID of Policy (optional)</li>\n<li style=\"font-weight: bold;\"><strong>Statement</strong></li>\n</ol>\n<p style=\"font-weight: bold;\"><span style=\"text-decoration: underline;\"><strong>Statement</strong></span></p>\n<ol>\n<li><strong>SID:</strong> Statement ID (optional)</li>\n<li><strong>Effect:</strong> <strong>ALLOW/DENY</strong></li>\n<li><strong>Pricipal:</strong> IAM users/groups/roles</li>\n<li><strong>Actions:</strong> List of actions</li>\n<li><strong>Resources:</strong> List of Resources</li>\n<li><strong>Conditions:</strong> For policy to be active (Optional)</li>\n</ol>",
+          "tags": [
+            "Concept",
+            "IAM"
+          ]
+        },
+        {
+          "id": "1757473125295",
+          "question": "Elastic Block Storage (EBS)",
+          "answer": "<ul>\n<li>Volume Storage</li>\n<li>Network Storage</li>\n<li>Persist data after termination</li>\n<li>1 EBS can connect to only 1 EC2 &lt;-&gt; 1 EC2 can connect to multiple EBS</li>\n<li>Bound to 1 AZ</li>\n<li>Billed for provisioned capacity</li>\n<li>On instance termination\n<ul>\n<li>root EBS volume of instance is <strong>deleted&nbsp;</strong>(Default)</li>\n<li>attached EBS volume is <strong>not deleted&nbsp;</strong>(Default)</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "EBS"
+          ]
+        },
+        {
+          "id": "1757474155590",
+          "question": "EBS Snapshot",
+          "answer": "<ul>\n<li>Create snapshot of EBS at a point in time</li>\n<li>No need to detach volume, but recommended</li>\n<li>Can copy across AZ or Region</li>\n<li>Features\n<ul>\n<li><strong>Snapshot Archive:</strong> Cheaper, take 1-3 days to restore</li>\n<li><strong>Recycle Bin:</strong> recover from accidental deletion (1 day to 1 year)</li>\n<li><strong>Fast Snapshot Restore:</strong> Force full init of snapshot to EBS volume (Expensive)</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "EBS"
+          ]
+        },
+        {
+          "id": "1757477497695",
+          "question": "EBS Volume Types",
+          "answer": "<table style=\"border-collapse: collapse; width: 100.039%; height: 707.103px;\" border=\"1\"><colgroup><col style=\"width: 9.31249%;\"><col style=\"width: 14.9707%;\"><col style=\"width: 13.0846%;\"><col style=\"width: 14.4992%;\"><col style=\"width: 11.5522%;\"><col style=\"width: 8.84097%;\"><col style=\"width: 9.07673%;\"><col style=\"width: 18.625%;\"></colgroup>\n<tbody>\n<tr style=\"height: 44.7917px;\">\n<td style=\"height: 44.7917px;\">&nbsp;</td>\n<td style=\"height: 44.7917px;\">Type</td>\n<td style=\"height: 44.7917px;\">Storage</td>\n<td style=\"height: 44.7917px;\">Base IOPS<br>Max IOPS</td>\n<td style=\"height: 44.7917px;\">Throughput</td>\n<td style=\"height: 44.7917px;\">Boot Volume</td>\n<td style=\"height: 44.7917px;\">Muti-Attached</td>\n<td style=\"height: 44.7917px;\">Use Case</td>\n</tr>\n<tr style=\"height: 137.583px;\">\n<td style=\"height: 137.583px;\">gp2</td>\n<td style=\"height: 275.166px;\" rowspan=\"2\">General Purpose SSD</td>\n<td style=\"height: 275.166px;\" rowspan=\"2\">1 GiB - 16 TiB</td>\n<td style=\"height: 137.583px;\">\n<p>3 IOPs per GB<br>(depends on storage size)</p>\n<p>16,000 IOPS</p>\n</td>\n<td style=\"height: 137.583px;\">250 MB/s</td>\n<td style=\"height: 275.166px;\" rowspan=\"2\">Yes</td>\n<td style=\"height: 275.166px;\" rowspan=\"2\">No</td>\n<td style=\"height: 275.166px;\" rowspan=\"2\">\n<p>General Purpose</p>\n<p>Balanced workload</p>\n</td>\n</tr>\n<tr style=\"height: 137.583px;\">\n<td style=\"height: 137.583px;\">gp3</td>\n<td style=\"height: 137.583px;\">\n<p>3,000 IOPS<br>(independent of storage size)</p>\n<p>16,000 IOPS&nbsp;</p>\n</td>\n<td style=\"height: 137.583px;\">1,000 MB/s</td>\n</tr>\n<tr style=\"height: 137.583px;\">\n<td style=\"height: 137.583px;\">io1</td>\n<td style=\"height: 275.166px;\" rowspan=\"2\">Provisioned IOPS SSD</td>\n<td style=\"height: 137.583px;\">4 GiB - 16 TiB</td>\n<td style=\"height: 137.583px;\">\n<p>Provisioned by user</p>\n<p>64,000 IOPS<br>(50 IOPS/GB)</p>\n</td>\n<td style=\"height: 137.583px;\">1,000 MB/s</td>\n<td style=\"height: 275.166px;\" rowspan=\"2\">Yes</td>\n<td style=\"height: 275.166px;\" rowspan=\"2\">Yes</td>\n<td style=\"height: 275.166px;\" rowspan=\"2\">\n<p>Mission-critical database</p>\n<p>High &amp; consistent IOPs</p>\n</td>\n</tr>\n<tr style=\"height: 137.583px;\">\n<td style=\"height: 137.583px;\">io2 Block Express</td>\n<td style=\"height: 137.583px;\">4 GiB - 64 TiB</td>\n<td style=\"height: 137.583px;\">\n<p>Provisioned by user</p>\n<p>64,000 IOPS<br>(500 IOPS/GB)</p>\n</td>\n<td style=\"height: 137.583px;\">1,000 MB/s</td>\n</tr>\n<tr style=\"height: 67.1875px;\">\n<td style=\"height: 67.1875px;\">st1</td>\n<td style=\"height: 67.1875px;\">Throughput Optimized HDD</td>\n<td style=\"height: 111.979px;\" rowspan=\"2\">125 GiB - <br>16 TiB</td>\n<td style=\"height: 67.1875px;\">500 IOPS</td>\n<td style=\"height: 67.1875px;\">500 MB/s</td>\n<td style=\"height: 111.979px;\" rowspan=\"2\">No</td>\n<td style=\"height: 111.979px;\" rowspan=\"2\">No</td>\n<td style=\"height: 67.1875px;\">\n<p>Big Data</p>\n<p>Log Processing</p>\n</td>\n</tr>\n<tr style=\"height: 44.7917px;\">\n<td style=\"height: 44.7917px;\">sc1</td>\n<td style=\"height: 44.7917px;\">Cold HDD</td>\n<td style=\"height: 44.7917px;\">250 IOPS</td>\n<td style=\"height: 44.7917px;\">250 MB/s</td>\n<td style=\"height: 44.7917px;\">\n<p>Infrequent Access</p>\n<p>Backup Data</p>\n</td>\n</tr>\n</tbody>\n</table>",
+          "tags": [
+            "Concept",
+            "Compare",
+            "EBS"
+          ]
+        },
+        {
+          "id": "1757783311983",
+          "question": "EBS Multi-Attach",
+          "answer": "<ul>\n<li>Normally: 1 EBS connect to 1 EC2</li>\n<li>Multi-Attach: 1EBS connect to multiple EC2</li>\n<li>Only for EBS <strong>io1</strong> or <strong>io2</strong></li>\n<li>EC2 instances in same AZ</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "EBS"
+          ]
+        },
+        {
+          "id": "1757783710692",
+          "question": "EBS Encryption",
+          "answer": "<ul>\n<li>Encrypted EBS Volume:\n<ul>\n<li>Encrypted data at rest inside EBS Volume</li>\n<li>Encrypted data in transit</li>\n<li>Encrypted snapshots</li>\n<li>Encrypted volumes created from snapshot</li>\n</ul>\n</li>\n<li>Cannot directly encrypt an unecrypted EBS Volume\n<ol>\n<li>Create snapshot of unencrypted volume</li>\n<li>Encrypt the copy of snapshot</li>\n<li>Create new volume using encrypted snapshot</li>\n<li>New volume is now encrypted</li>\n</ol>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "EBS"
+          ]
+        },
+        {
+          "id": "1757785194351",
+          "question": "EFS Performance",
+          "answer": "<ul>\n<li>1000s of concurrent NFS Clients</li>\n<li>10 GB+/s throughput</li>\n<li>Grow to Petabyte-scale network automatically</li>\n<li><strong>Performance:</strong> (set at creation, cannot change)\n<ul>\n<li><strong>General Purpose:</strong> low latency (web server)</li>\n<li><strong>Max I/O:</strong> highly parallel but higher latency (big data)</li>\n</ul>\n</li>\n<li><strong>Throughput:</strong> (can change)\n<ul>\n<li><strong>Bursting:&nbsp;</strong>50 MiB/s + burst up to 100 MiB/s&nbsp;\n<ul>\n<li>Only pay for storage size</li>\n</ul>\n</li>\n<li><strong>Provisioned:&nbsp;</strong>set throughput regardless of storage size\n<ul>\n<li>pay for provisioned amount</li>\n</ul>\n</li>\n<li><strong>Elastic:</strong> Automatically scales throughput (unpredictable workload)\n<ul>\n<li>pay based on actual throughput used</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "EFS"
+          ]
+        },
+        {
+          "id": "1757785586459",
+          "question": "EFS Storage Class",
+          "answer": "<ul>\n<li>Storage Tiers\n<ul>\n<li><strong>Standard</strong></li>\n<li><strong>Infrequent Access</strong></li>\n<li><strong>Archive</strong></li>\n<li>can implement <strong>lifecycle policies&nbsp;</strong></li>\n</ul>\n</li>\n<li>Availability\n<ul>\n<li><strong>Stand</strong><strong>ard:</strong> Multi-AZ (best for prod)</li>\n<li><strong>One Zone:</strong> One AZ (best for dev)</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "EFS"
+          ]
+        },
+        {
+          "id": "1757789699610",
+          "question": "Elastic File System (EFS)",
+          "answer": "<ul>\n<li>Managed Network File System</li>\n<li>Works with EC2 instances in multi-AZ</li>\n<li>NFSv4.1 protocol</li>\n<li>Pay per use</li>\n<li>POSIX file system (Linux)</li>\n<li>Compatible with Linux based AMI</li>\n<li>Higher cost compared to EBS</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "EFS"
+          ]
+        },
+        {
+          "id": "1757865589643",
+          "question": "Elastic Load Balancer (ELB)",
+          "answer": "<ul>\n<li>Managed Load Balancer</li>\n<li>Spread load across multiple downstream</li>\n<li>Expose single point of access (DNS)</li>\n<li>Health checks</li>\n<li>Provide SSL termination</li>\n<li>Enforce stickiness with cookie</li>\n<li>High availability across multiple AZs</li>\n<li>Separate public and private traffic</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "ELB"
+          ]
+        },
+        {
+          "id": "1757866168578",
+          "question": "ELB Health Checks",
+          "answer": "<ul>\n<li>Check if instance is healthy</li>\n<li>Check on both port and route (e.g. /health)</li>\n<li>response: 200 (OK)</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "ELB"
+          ]
+        },
+        {
+          "id": "1757866454076",
+          "question": "ELB Types of load balancer",
+          "answer": "<ul>\n<li>Application Load Balancer (ALB)\n<ul>\n<li>HTTP, HTTPS, WebSocket</li>\n</ul>\n</li>\n<li>Network Load Balancer (NLB)\n<ul>\n<li>TCP, TLS, UDP</li>\n</ul>\n</li>\n<li>Gateway Load Balancer (GLB)\n<ul>\n<li>Network Layer - IP Protocol</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "ELB"
+          ]
+        },
+        {
+          "id": "1757866793058",
+          "question": "HTTP vs WebSocket",
+          "answer": "<table style=\"border-collapse: collapse; width: 100%; height: 134.375px;\" border=\"1\"><colgroup><col style=\"width: 33.3333%;\"><col style=\"width: 33.3333%;\"><col style=\"width: 33.3333%;\"></colgroup>\n<tbody>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">&nbsp;</td>\n<td style=\"height: 22.3958px;\">HTTP/HTTPS</td>\n<td style=\"height: 22.3958px;\">WebSocket</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Communication</td>\n<td style=\"height: 22.3958px;\">Request-Response only</td>\n<td style=\"height: 22.3958px;\">Full-duplex</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Connection</td>\n<td style=\"height: 22.3958px;\">1 request = 1 connection</td>\n<td style=\"height: 22.3958px;\">Single long-lived connection</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Overhead</td>\n<td style=\"height: 22.3958px;\">High (HTTP header per request)</td>\n<td style=\"height: 22.3958px;\">Low (After initial handshake)</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Real-time</td>\n<td style=\"height: 22.3958px;\">Poor</td>\n<td style=\"height: 22.3958px;\">Excellent</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Use Cases</td>\n<td style=\"height: 22.3958px;\">Webpage</td>\n<td style=\"height: 22.3958px;\">Live chat</td>\n</tr>\n</tbody>\n</table>",
+          "tags": [
+            "Concept",
+            "Compare",
+            "Network"
+          ]
+        },
+        {
+          "id": "1757905405253",
+          "question": "Application Load Balancer (ALB)",
+          "answer": "<ul>\n<li>Level 7 (HTTP)</li>\n<li>Support HTTP &amp; WebSocket</li>\n<li>Support redirects ( HTTP -&gt; HTTPS)</li>\n<li>Health check configured at target group level</li>\n<li>Load Balance\n<ul>\n<li>To multiple HTTP applications across machines</li>\n<li>To multiple applications on same machine (different port)</li>\n</ul>\n</li>\n<li>Routing method\n<ul>\n<li><strong>Path</strong> in URL (example.com<strong>/users </strong>&amp; example.com<strong>/posts</strong>)</li>\n<li><strong>hostname</strong> in URL (<strong>one</strong>.example.com &amp; <strong>other</strong>.example.com)</li>\n<li><strong>Query String</strong>, <strong>Headers </strong>(example.com/users?<strong>id=123&amp;order=false</strong>)</li>\n</ul>\n</li>\n<li>Target Groups (ALB can route to multiple target groups)\n<ul>\n<li>EC2 instance - HTTP</li>\n<li>ECS task - HTTP</li>\n<li>Lambda - HTTP request translated to JSON event</li>\n<li>IP Address - Private IP</li>\n</ul>\n</li>\n<li>Provide a DNS name for client to point to (e.g. XXX.region.elb.amazonaws.com)</li>\n<li>Does not show client's real IP (ALB acts as proxy)</li>\n<li>ALB inserts client's IP into HTTP header <strong>X-Forwarded-For</strong></li>\n<li><strong>X-Forwarded-Port </strong>= Port,<strong> X-Forwarded-Proto </strong>= Protocol</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "ELB",
+            "ALB"
+          ]
+        },
+        {
+          "id": "1757908647936",
+          "question": "Network Load Balancer (NLB)",
+          "answer": "<ul>\n<li>Forward TCP &amp; UDP traffic</li>\n<li>Ultra-low latency</li>\n<li>One Static IP per AZ, support assigning Elastic IP</li>\n<li>Supported Healthcheck protocol: TCP,HTTP,HTTPS</li>\n<li>Target Groups\n<ul>\n<li>EC2 instances</li>\n<li>Private IP addresses</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "ELB",
+            "NLB"
+          ]
+        },
+        {
+          "id": "1757910224383",
+          "question": "Gateway Load Balancer (GWLB)",
+          "answer": "<ul>\n<li>Operate at Level 3 (Network Layer)</li>\n<li>Use GENEVE protocol on port 6081</li>\n<li>Transparently insert third-party app\n<ul>\n<li>E.g. packet inspection tools, intrusion detection, firewall</li>\n<li>Divert traffic to 3rd party instead of using 3rd party to sniff, man-in-the-middle</li>\n<li>After inspection, data is sent back to GWLB</li>\n<li>GWLB then send data back to intended destination</li>\n</ul>\n</li>\n<li>Target Groups\n<ul>\n<li>EC2 instances</li>\n<li>Private IP addresses</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "ELB",
+            "GWLB"
+          ]
+        },
+        {
+          "id": "1757920542805",
+          "question": "ALB Sticky Sessions",
+          "answer": "<ul>\n<li>Allow client to always redirect to same instance behind load balancer</li>\n<li>Works for ALB</li>\n<li>May bring imbalance to load of EC2 instances</li>\n<li>To minimise impact, use sticky session only when\n<ul>\n<li>App is stateful</li>\n<li>Session is short-lived</li>\n</ul>\n</li>\n<li>Types of cookies\n<ul>\n<li>Application-based Custom Cookies\n<ul>\n<li>Generated by target</li>\n<li>Include any custom attribute by the app</li>\n<li>Cookie name per target group</li>\n<li>Cannot use name <strong>AWSALB</strong>, <strong>AWSALBAPP</strong></li>\n</ul>\n</li>\n<li>Application cookie\n<ul>\n<li>Generated by ALB</li>\n<li>Cookie values - session, users, etc.</li>\n<li>App that doesnt want to change application logic to handle sticky session</li>\n<li>Stable identifier (valid until browser delete, set custome expiration)</li>\n<li>Cookie name is <strong>AWSALBAPP</strong></li>\n</ul>\n</li>\n<li>Duration-based Cookies\n<ul>\n<li>Generatd by ALB</li>\n<li>Has TTL in seconds</li>\n<li>Cookie name is <strong>AWSALB</strong></li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "ELB",
+            "ALB"
+          ]
+        },
+        {
+          "id": "1757922278288",
+          "question": "ELB SSL Certificates",
+          "answer": "<ul>\n<li>Uses X.509 certificates (SSL/TLS server certificate)</li>\n<li>manage using ACM (AWS Certificate Manager)</li>\n<li>Can create/upload own certificates</li>\n<li>Acts as HTTPS listener:\n<ul>\n<li>Specify default certificate</li>\n<li>Can add optional list certs for supporting multiple domains\n<ul>\n<li>example.com, api.example.com</li>\n</ul>\n</li>\n<li>Client can use <strong>SNI</strong> to specify hostname they want to reach</li>\n<li>Ability to choose security policies to support older SSL/TLS versions</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "ELB",
+            "Network"
+          ]
+        },
+        {
+          "id": "1757923626633",
+          "question": "SSL Server Name Indicator (SNI)",
+          "answer": "<ul>\n<li>Server can have multiple websites/domain on same IP address</li>\n<li>But needs to know which certificate to present to user</li>\n<li>Example\n<ul>\n<li>example.com uses Certificate A</li>\n<li>api.example.com uses Certificate B</li>\n<li>client tells ALB -&gt; Connect to api.example.com -&gt; ALB returns Certificate B</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "Network",
+            "ELB"
+          ]
+        },
+        {
+          "id": "1757924364024",
+          "question": "ELB Deregistration Delay",
+          "answer": "<ol>\n<li>For ALB &amp; NLB</li>\n<li>ELB receive signal to deregister a target\n<ul>\n<li>Manual deregistration</li>\n<li>Auto Scaling Group scale in</li>\n<li>Unhealthy instance</li>\n</ul>\n</li>\n<li>ELB marks the target as \"draining\"\n<ul>\n<li>Stop sending new connections</li>\n</ul>\n</li>\n<li>ELB waits for the deregistration delay period\n<ul>\n<li>existing connection allowed to complete</li>\n</ul>\n</li>\n<li>ELB fully deregisters the target\n<ul>\n<li>Remove target from target group</li>\n<li><strong>Does not wait</strong> for instance to complete</li>\n<li>If instance cannot complete in time -&gt;workload is lost</li>\n</ul>\n</li>\n</ol>",
+          "tags": [
+            "Concept",
+            "ELB"
+          ]
+        },
+        {
+          "id": "1757997595775",
+          "question": "ASG Attributes",
+          "answer": "<ul>\n<li>Launch Template/Launch Config\n<ul>\n<li>AMI &amp; Instance Type</li>\n<li>EC2 User Data</li>\n<li>EBS Volume</li>\n<li>Security Groups</li>\n<li>SSH Key Pair</li>\n<li>IAM Roles of EC2 instance</li>\n<li>Network &amp; Subnets information</li>\n<li>Load balancer information</li>\n</ul>\n</li>\n<li>Min Size/ Max Size/ Capacity</li>\n<li>Scaling Policies</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "ASG"
+          ]
+        },
+        {
+          "id": "1758000082383",
+          "question": "ASG Scaling Policies",
+          "answer": "<ol>\n<li>Simple Scaling\n<ul>\n<li>One action per alarm (Single Step)</li>\n<li>e.g. CPU&gt;70% -&gt;add 1 instance</li>\n</ul>\n</li>\n<li>Step Scaling\n<ul>\n<li>Multiple actions per alarm</li>\n<li>More granular control</li>\n<li>e.g. CPU &gt;70% -&gt; add 1 instance</li>\n<li>CPU &gt;85% -&gt; add 2 instances</li>\n</ul>\n</li>\n<li>Target Tracking Scaling\n<ul>\n<li>Track metric</li>\n<li>ASG scale in/out automatically</li>\n<li>Slight delay ( ASG follows metric)</li>\n<li>e.g. Keep avg CPU at 60%</li>\n</ul>\n</li>\n<li>Scheduled Scaling\n<ul>\n<li>Set instance sizes based on time</li>\n<li>No delay</li>\n<li>For predicatable workload</li>\n<li>Non dynamic (fixed pattern)</li>\n<li>e.g. 9am-5pm -&gt;10 instances<br>5pm-9am -&gt; 4 instances</li>\n</ul>\n</li>\n<li>Predictive Scaling\n<ul>\n<li>Use ML to forecast</li>\n<li>Require 1-2 days of historical data</li>\n<li>For predicatable workload</li>\n<li>Dynamic</li>\n<li>No delay (predict workload)</li>\n</ul>\n</li>\n</ol>",
+          "tags": [
+            "Concept",
+            "ASG"
+          ]
+        },
+        {
+          "id": "1758000463026",
+          "question": "ASG Scaling Group Comparision",
+          "answer": "<ul>\n<li>Simple/Step Scaling<br>\n<ul>\n<li>More control</li>\n<li>Fixed pattern</li>\n<li>More setup required</li>\n</ul>\n</li>\n<li>Target-Tracking Scaling\n<ul>\n<li>Dynamic</li>\n<li>Slight delay (follow metrics)</li>\n<li>For less predictable workload&nbsp;</li>\n<li>Almost no setup required</li>\n</ul>\n</li>\n<li>Scheduled Scaling\n<ul>\n<li>More control</li>\n<li>Fixed pattern</li>\n<li>Based on time</li>\n<li>For predictable workload</li>\n<li>More setup required</li>\n</ul>\n</li>\n<li>Predictive Scaling\n<ul>\n<li>Leverage ML</li>\n<li>No delay</li>\n<li>For predicatable workload</li>\n<li>Need 1-2 days of historical data</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Compare",
+            "ASG"
+          ]
+        },
+        {
+          "id": "1758000876189",
+          "question": "ASG Metrics",
+          "answer": "<ul>\n<li>Metrics to scale on\n<ul>\n<li><strong>CPUUtilization:</strong> Avg CPU ultilization across all instances</li>\n<li><strong>RequesCountPerTarget:</strong> Avg number of request per instance</li>\n<li><strong>AverageNetworkIn/Out:</strong> Avg network in/out of instance (if app is network-bound)</li>\n<li><strong>Custom Metrics</strong>&nbsp;</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "ASG"
+          ]
+        },
+        {
+          "id": "1758000940805",
+          "question": "EC2 Spot Instance",
+          "answer": "<p>Request:</p>\n<ol>\n<li>Define max spot price</li>\n<li>get spot instance when current spot price &lt; max</li>\n<li>if current spot price &gt; max -&gt; can choose to stop/terminate</li>\n</ol>\n<p>Use Case: batch job, data analysis, failure-resilient workload</p>\n<p><img src=\"data:image/png;base64,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\"></p>\n<p>Cancelling a spot request doesnt terminate instance, only stop AWS from launching more instance</p>",
+          "tags": [
+            "Concept",
+            "EC2"
+          ]
+        },
+        {
+          "id": "1758000954977",
+          "question": "IAM Roles",
+          "answer": "<ul>\n<li>Allows AWS services to perform actions</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "IAM"
+          ]
+        },
+        {
+          "id": "1758000994080",
+          "question": "Elastic Network Interface (ENI)",
+          "answer": "<ul>\n<li>Virtual Network Card</li>\n<li>Attributes:\n<ul>\n<li><strong>Primary private IPv4</strong>, one or more secondary IPv4</li>\n<li>One <strong>Elastic IPv4</strong> per private IPv4</li>\n<li>One <strong>Public IPv4</strong></li>\n<li>One or more <strong>Security Groups</strong></li>\n<li><strong>MAC Address </strong></li>\n</ul>\n</li>\n<li>Can be indepently created</li>\n<li>Can be moved between different EC2</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "Network"
+          ]
+        },
+        {
+          "id": "1758001794926",
+          "question": "Auto Scaling Group (ASG)",
+          "answer": "<ul>\n<li>Scale out: Increase EC2 instances</li>\n<li>Scale in: Decrease ECS instances</li>\n<li>Use metrics from Cloudwatch to scale</li>\n<li>Ensure minimum and maximum number of EC2 instances</li>\n<li>Automatically register instances to load balancer</li>\n<li>Create EC2 instances when old one is terminated</li>\n<li><strong>Scaling Cooldowns:</strong>\n<ul>\n<li>Set cooldown period</li>\n<li>Default cooldown (300 seconds)</li>\n<li>ASG will not scale during this time</li>\n<li>Allow metrics to stabilize</li>\n</ul>\n</li>\n<li><strong>Instance Warm-ups:</strong>\n<ul>\n<li>Set warm-up delay</li>\n<li>Delay to make sure instance is ready</li>\n<li>if delay is not over, the instance is not accounted into metric</li>\n</ul>\n</li>\n<li>Free (only pay for underlying EC2 instances)</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "ASG"
+          ]
+        },
+        {
+          "id": "1758002608879",
+          "question": "ASG Launch Template VS Launch Configuration",
+          "answer": "<table style=\"border-collapse: collapse; width: 100.039%; height: 201.562px;\" border=\"1\"><colgroup><col style=\"width: 33.3333%;\"><col style=\"width: 33.3333%;\"><col style=\"width: 33.3333%;\"></colgroup>\n<tbody>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Feature</td>\n<td style=\"height: 22.3958px;\">Launch Template</td>\n<td style=\"height: 22.3958px;\">Launch Configuration (Legacy)</td>\n</tr>\n<tr style=\"height: 44.7917px;\">\n<td style=\"height: 44.7917px;\">Immutability</td>\n<td style=\"height: 44.7917px;\">Versioned<br>(Can create new version)</td>\n<td style=\"height: 44.7917px;\">Immutable<br>(Need to create new launch config)</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Use Case</td>\n<td style=\"height: 22.3958px;\">For all new ASGs</td>\n<td style=\"height: 22.3958px;\">Basic ASG, legacy system</td>\n</tr>\n<tr style=\"height: 44.7917px;\">\n<td style=\"height: 44.7917px;\">Spot Instances &amp; Mixed Instance</td>\n<td style=\"height: 44.7917px;\">Support spot options, <br>mixed instance policy</td>\n<td style=\"height: 44.7917px;\">No</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Multiple Network Interface</td>\n<td style=\"height: 22.3958px;\">Yes</td>\n<td style=\"height: 22.3958px;\">No</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Advanced EC2 features</td>\n<td style=\"height: 22.3958px;\">Yes</td>\n<td style=\"height: 22.3958px;\">No</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Modify user data</td>\n<td style=\"height: 22.3958px;\">Yes</td>\n<td style=\"height: 22.3958px;\">No</td>\n</tr>\n</tbody>\n</table>",
+          "tags": [
+            "Concept",
+            "Compare",
+            "ASG"
+          ]
+        },
+        {
+          "id": "1758254509054",
+          "question": "Relational Database Service (RDS)",
+          "answer": "<ul>\n<li>Managed DB service for SQL\n<ul>\n<li>Automated provisioning</li>\n<li>Point in Time Recovery</li>\n<li>Monitoring dashboard</li>\n<li>Read Replicas</li>\n<li>Multi AZ</li>\n<li>Scaling capability (vertical &amp; horizontal)</li>\n<li>Data stored in EBS thats managed by RDS</li>\n<li>User cannot access underlying EBS, only through endpoint</li>\n<li><strong>BUT</strong> cannot SSH into it</li>\n</ul>\n</li>\n<li>Supported database:\n<ul>\n<li>Postgres</li>\n<li>MySQL</li>\n<li>MariaDB</li>\n<li>Orable</li>\n<li>Microsoft SQL Server</li>\n<li>IBM DB2</li>\n<li>Aurora</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "RDS"
+          ]
+        },
+        {
+          "id": "1758255047234",
+          "question": "RDS Storage Auto Scaling",
+          "answer": "<ul>\n<li>Automatically increase storage size</li>\n<li>NOT enabled by default</li>\n<li>Set Maximum Storage Threshold (max storage to scale to)</li>\n<li>Only scale up</li>\n<li>Auto-scaling condition\n<ul>\n<li>Free storage &lt;10%</li>\n<li>Last at least 5 minutes</li>\n<li>6 hours cooldown period</li>\n</ul>\n</li>\n<li>For unpredicatble workload</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "RDS"
+          ]
+        },
+        {
+          "id": "1758259023455",
+          "question": "RDS Read Replica",
+          "answer": "<ul>\n<li>Max 15 Read Replicas</li>\n<li>Can be within AZ, Cross AZ, Cross Region</li>\n<li><strong>ASYNC</strong> replication (Eventually consistent)</li>\n<li>Can be promoted to fully DB instance\n<ul>\n<li>Once promoted, it works as another DB, no longer linked to old DB</li>\n<li>e.g. Disaster Recovery, Dev, etc.</li>\n</ul>\n</li>\n<li>Cost\n<ul>\n<li>Storage Cost: Same as primary DB instance</li>\n<li>Network Cost: (Data transfer)\n<ul>\n<li>Same AZ: Free</li>\n<li>Cross AZ: Charged</li>\n<li>Cross Region: Charged&nbsp;</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "RDS"
+          ]
+        },
+        {
+          "id": "1758262164846",
+          "question": "RDS Multi AZ",
+          "answer": "<ul>\n<li>Disaster Recovery</li>\n<li>1 primary instance + 1 standby instance</li>\n<li>Expose only 1 DNS name for automatic failover</li>\n<li>If primary instance fail, it will promote standby into primary instance</li>\n<li><strong>SYNC</strong> Replication</li>\n<li>Increase Availability</li>\n<li>Turning Single AZ to Multi AZ:\n<ul>\n<li>Zero downtime (just click 'Modify')</li>\n<li>Internal process\n<ol>\n<li>Snapshot taken</li>\n<li>New DB restored from snapshot in new AZ</li>\n<li>Synchronization between 2 DB</li>\n</ol>\n</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "RDS"
+          ]
+        },
+        {
+          "id": "1758263395642",
+          "question": "RDS Custom",
+          "answer": "<ul>\n<li>Managed database with OS and database customization</li>\n<li>Supported Database:\n<ul>\n<li>Oracle</li>\n<li>Microsoft SQL Server Database</li>\n</ul>\n</li>\n<li>Allows:\n<ul>\n<li>Configure settings</li>\n<li>Install patches</li>\n<li>Enable native features</li>\n<li>Access underlying EC2 instance using SSH or SSM Session Manager</li>\n</ul>\n</li>\n<li>Deactivate Automation Mode to perform customization</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "RDS"
+          ]
+        },
+        {
+          "id": "1758472051863",
+          "question": "Aurora High Availability and Read Scaling",
+          "answer": "<ul>\n<li>Aurora stores data in storage replicas (not read replicas)\n<ul>\n<li>Shared storage volume</li>\n<li>Not a separate instance like read replica</li>\n<li>Free</li>\n</ul>\n</li>\n<li>6 copies of data in 3 AZ\n<ul>\n<li>2 copies in each AZ</li>\n<li>Self-healing</li>\n</ul>\n</li>\n<li>Quorum-based (require multiple copies to agree)\n<ul>\n<li>Write: 4 out of 6</li>\n<li>Read: 3 out of 6</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "Aurora"
+          ]
+        },
+        {
+          "id": "1758474192115",
+          "question": "Aurora",
+          "answer": "<ul>\n<li>Cloud Optimized</li>\n<li>Supported SQL:<br>\n<ul>\n<li>MySQL</li>\n<li>Postgres</li>\n</ul>\n</li>\n<li>Auto scaling storage\n<ul>\n<li>Increment of 10GB</li>\n<li>Max 128 TB</li>\n</ul>\n</li>\n<li>DB Cluster\n<ul>\n<li>1 writer (master)</li>\n<li>Read replicas:\n<ul>\n<li>Max: 15 replicas</li>\n<li>Can be cross region</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>Instanteneous failover: Highly available</li>\n<li>More expensive than RDS</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "Aurora"
+          ]
+        },
+        {
+          "id": "1758474620401",
+          "question": "Aurora Endpoints",
+          "answer": "<table style=\"border-collapse: collapse; width: 100%; height: 89.5832px;\" border=\"1\"><colgroup><col style=\"width: 33.3333%;\"><col style=\"width: 33.3333%;\"><col style=\"width: 33.3333%;\"></colgroup>\n<tbody>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Type</td>\n<td style=\"height: 22.3958px;\">Route to</td>\n<td style=\"height: 22.3958px;\">Use Case</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Writer</td>\n<td style=\"height: 22.3958px;\">Primary writer instance</td>\n<td style=\"height: 22.3958px;\">Writes and lastest data</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Reader</td>\n<td style=\"height: 22.3958px;\">All available read replica instance<br>Load balancing to choose only one</td>\n<td style=\"height: 22.3958px;\">\n<p>Eventually consistent data<br>High load</p>\n</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Custom</td>\n<td style=\"height: 22.3958px;\">Can specify subset of instances</td>\n<td style=\"height: 22.3958px;\">Specialized workload<br>Analytics</td>\n</tr>\n</tbody>\n</table>",
+          "tags": [
+            "Concept",
+            "Compare",
+            "Aurora"
+          ]
+        },
+        {
+          "id": "1758474898206",
+          "question": "Aurora Serverless",
+          "answer": "<ul>\n<li>Auto provision of DB instance</li>\n<li>Automatically adjust compute</li>\n<li>Pay based on actual usage</li>\n<li>Use case:\n<ul>\n<li>Infrequent</li>\n<li>Unpredicatble workload</li>\n</ul>\n</li>\n<li>No capacity planning needed</li>\n<li>More expensive for sustained workload compared to Aurora</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "Aurora"
+          ]
+        },
+        {
+          "id": "1758475690752",
+          "question": "Aurora Global Database",
+          "answer": "<ul>\n<li>1 Primary region (write/read)</li>\n<li>Up to 5 secondary read-only region</li>\n<li>replication lag &lt; 1 sec</li>\n<li>Up to 16 read replicas</li>\n<li>Can promote primary to another region with RTO &lt; 1 min</li>\n<li>Cross-region replication &lt; 1 sec</li>\n<li>Use case\n<ul>\n<li>Global apps</li>\n<li>Mission-critical</li>\n<li>Strict data recovery</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "Aurora"
+          ]
+        },
+        {
+          "id": "1758475975838",
+          "question": "Aurora Machine Learning",
+          "answer": "<ul>\n<li>Integrate Aurora queries directly with AWS ML services</li>\n<li>ML-based predictions via SQL</li>\n<li>Supported Services\n<ul>\n<li>SageMaker</li>\n<li>Comprehend</li>\n</ul>\n</li>\n<li>Use case:\n<ul>\n<li>Fraud detection</li>\n<li>Ads targeting</li>\n<li>setiment analysis</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "Aurora"
+          ]
+        },
+        {
+          "id": "1758476476888",
+          "question": "RDS vs Aurora Backups",
+          "answer": "<table style=\"border-collapse: collapse; width: 100%; height: 67.1874px;\" border=\"1\"><colgroup><col style=\"width: 33.3591%;\"><col style=\"width: 33.3591%;\"><col style=\"width: 33.2432%;\"></colgroup>\n<tbody>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">&nbsp;</td>\n<td style=\"height: 22.3958px;\">RDS</td>\n<td style=\"height: 22.3958px;\">Aurora</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Automated backup</td>\n<td style=\"height: 22.3958px;\">\n<p>Daily full backup of database<br>Transaction logs backup <strong>every 5 mins</strong><br>Restore point in time<br>1-35 days of retention<br><strong>Can</strong> be disable&nbsp;</p>\n</td>\n<td style=\"height: 22.3958px;\">\n<p>Daily full backup of database<br>Transaction logs backup <strong>real-time</strong><br>1-35 days of retention<br><strong>Cannot</strong> be disable</p>\n</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Manual DB snapshot</td>\n<td style=\"height: 22.3958px;\">Manually triggered<br>Retention: until user delete</td>\n<td style=\"height: 22.3958px;\">Manually triggered<br>Retention: until user delete</td>\n</tr>\n</tbody>\n</table>",
+          "tags": [
+            "Concept",
+            "Compare",
+            "RDS",
+            "Aurora"
+          ]
+        },
+        {
+          "id": "1758476719180",
+          "question": "RDS & Aurora Restore Option",
+          "answer": "<ul>\n<li>Note: pay for stopped RDS/Aurora instance</li>\n<li>If not use, snapshot &amp; restore at later date</li>\n<li>Restore Options:\n<ol>\n<li>Restore RDS/Aurora from backup or snapshot</li>\n<li>Restore MySQL RDS from S3 (on-prem database)\n<ul>\n<li>Create backup of on-prem database</li>\n<li>Store it on S3</li>\n<li>Restore onto new RDS instance</li>\n</ul>\n</li>\n<li>Restore MySQL Aurora from S3(on-prem database)\n<ul>\n<li>Create backup of on-prem database using Percona XtraBackup</li>\n<li>Store it on S3</li>\n<li>Restore onto new Aurora cluster</li>\n</ul>\n</li>\n</ol>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "RDS"
+          ]
+        },
+        {
+          "id": "1758477521359",
+          "question": "Aurora Database Cloning",
+          "answer": "<ul>\n<li>Create new DB from existing DB</li>\n<li>Faster than snapshot &amp; restore</li>\n<li>Use Copy-On-Write Protocol\n<ul>\n<li>At cloning time: Original DB &amp; clone DB share same data storage</li>\n<li>After cloning: only modified data pages get copied and stored separately</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "Aurora"
+          ]
+        },
+        {
+          "id": "1758477672638",
+          "question": "RDS & Aurora Security",
+          "answer": "<ul>\n<li>At-rest encryption:\n<ul>\n<li>Database master &amp; replicas encryption using AWS KMS</li>\n<li>If master is not encrypted -&gt; read replica cannot be encrypted\n<ul>\n<li>Need to restore DB snapshot as encrypted</li>\n</ul>\n</li>\n</ul>\n</li>\n<li>In-flight encryption:\n<ul>\n<li>TLS-ready by default, use the AWS TLS root certificates client-side</li>\n</ul>\n</li>\n<li>No SSH available except on RDS Custom</li>\n<li>Audit Logs can be enabled and sent to CloudWatch Logs for longer retention</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "RDS",
+            "Aurora"
+          ]
+        },
+        {
+          "id": "1758477985186",
+          "question": "RDS Proxy",
+          "answer": "<ul>\n<li>Managed database proxy for RDS/Aurora</li>\n<li>Connection pooling\n<ul>\n<li>Reuse and shares DB Connection</li>\n<li>Reduce latency</li>\n<li>Reduce resource consumption</li>\n<li>Reduce failover time</li>\n</ul>\n</li>\n<li>RDS Proxy is never publicly accessible (must be accessed from VPC)</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "RDS",
+            "Aurora"
+          ]
+        },
+        {
+          "id": "1758879066454",
+          "question": "ElastiCache",
+          "answer": "<ul>\n<li>In-memory database</li>\n<li>Reduce load of databases for read intensive workload</li>\n<li>Enhance serverless architecture</li>\n<li>Requires code changes to integrate caching</li>\n<li>App is responsible for managing data in cache&nbsp;</li>\n<li>Database Caching\n<ul>\n<li>App queries from ElastiCache, if not available, query from DB and store in Elasticache</li>\n<li>Must have invalidation strategy to only keep most current data</li>\n</ul>\n</li>\n<li>User Session Store\n<ul>\n<li>App writes session data into ElastiCache</li>\n<li>App retrieve data from ElastiCache</li>\n</ul>\n</li>\n<li>Caching Strategies\n<ul>\n<li>Lazy Loading\n<ul>\n<li>If data in cache, read it, else, read from DB</li>\n<li>Stale data, existing data is always used (not updated)</li>\n</ul>\n</li>\n<li>Write Through\n<ul>\n<li>Add data to cache when app perform write on DB</li>\n<li>Write overhead, writing becomes 2 step process</li>\n</ul>\n</li>\n<li>Session Store\n<ul>\n<li>Set TTL on data to keep freshness</li>\n<li>Premature expiration can occue</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "ElastiCache"
+          ]
+        },
+        {
+          "id": "1758880330413",
+          "question": "ElastiCache",
+          "answer": "<table style=\"border-collapse: collapse; width: 100%; height: 111.979px;\" border=\"1\"><colgroup><col style=\"width: 33.3591%;\"><col style=\"width: 33.3591%;\"><col style=\"width: 33.3591%;\"></colgroup>\n<tbody>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">&nbsp;</td>\n<td style=\"height: 22.3958px;\">Redis</td>\n<td style=\"height: 22.3958px;\">Memcached</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Data Structure</td>\n<td style=\"height: 22.3958px;\">Advanced (list, strings, etc)&nbsp;</td>\n<td style=\"height: 22.3958px;\">Simple Key-Value</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Multi-AZ with Auto-Failover</td>\n<td style=\"height: 22.3958px;\">Yes</td>\n<td style=\"height: 22.3958px;\">No</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Data Durability</td>\n<td style=\"height: 22.3958px;\">Yes (Using Append-Only File to store all write operations and replay AOF)</td>\n<td style=\"height: 22.3958px;\">No</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Performance</td>\n<td style=\"height: 22.3958px;\">Slow</td>\n<td style=\"height: 22.3958px;\">Fast</td>\n</tr>\n<tr>\n<td>Use Case</td>\n<td>Live leaderboard<br>Session Management<br>Real-time Analytics</td>\n<td>Simple caching<br>Caching static content</td>\n</tr>\n</tbody>\n</table>",
+          "tags": [
+            "Concept",
+            "Compare",
+            "ElastiCache"
+          ]
+        },
+        {
+          "id": "1758882140353",
+          "question": "EC2 Amazon Machine Image (AMI)",
+          "answer": "<ul>\n<li>Pre-configured template of EC2</li>\n<li>Golden AMI: standardized and curated AMI to use for consistent production</li>\n<li>Region-scoped (can be copied across region)</li>\n<li>Source\n<ul>\n<li>Public AMI (AWS AMI)</li>\n<li>Custom AMI</li>\n<li>AWS Marketplace AMI</li>\n</ul>\n</li>\n<li>Process\n<ol>\n<li>Start EC2 instance</li>\n<li>Stop instance</li>\n<li>build AMI</li>\n<li>Launch new instance using AMI</li>\n</ol>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "EC2"
+          ]
+        },
+        {
+          "id": "1758962611205",
+          "question": "Route 53",
+          "answer": "<ul>\n<li>Fully managed Domain Name Server (DNS)</li>\n<li>Provide health checks for resources</li>\n<li>Authoritative\n<ul>\n<li>Contain all DNS records for domain names within a domain</li>\n<li>Provide the final IP address if non-authoritative DNS server cannot find</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "Route 53"
+          ]
+        },
+        {
+          "id": "1758968343260",
+          "question": "Route 53 Record Types",
+          "answer": "<ul>\n<li><strong>A</strong>: Maps to IPv4\n<ul>\n<li>192.0.2.1</li>\n</ul>\n</li>\n<li><strong>AAAA</strong>: Maps to IPv6\n<ul>\n<li>2001:db8::1</li>\n</ul>\n</li>\n<li><strong>CNAME</strong>: Maps to other domain/subdomain names<br>\n<ul>\n<li>Domain name of DNS record cannot be top-level domain&nbsp;</li>\n<li>\n<table style=\"border-collapse: collapse; width: 87.1639%; height: 67.1874px;\" border=\"1\"><colgroup><col style=\"width: 19.5228%;\"><col style=\"width: 9.24078%;\"><col style=\"width: 18.872%;\"><col style=\"width: 52.321%;\"></colgroup>\n<tbody>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Name</td>\n<td style=\"height: 22.3958px;\">Type</td>\n<td style=\"height: 22.3958px;\">Value</td>\n<td style=\"height: 22.3958px;\">Allowed</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">www.example.com</td>\n<td style=\"height: 22.3958px;\">CNAME</td>\n<td style=\"height: 22.3958px;\">example.com</td>\n<td style=\"height: 22.3958px;\">Yes</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">example.com</td>\n<td style=\"height: 22.3958px;\">CNAME</td>\n<td style=\"height: 22.3958px;\">www.example.com</td>\n<td style=\"height: 22.3958px;\">No (top-level can only have A, AAAA, NS)</td>\n</tr>\n</tbody>\n</table>\n</li>\n</ul>\n</li>\n<li><strong>NS</strong>: Maps to Name Servers for the Hosted Zone\n<ul>\n<li>Authoritative DNS server name assigned to serve the zone</li>\n<li>Automatically assigned and managed by AWS</li>\n</ul>\n</li>\n<li>Example\n<ul>\n<li>\n<table style=\"border-collapse: collapse; width: 56.3891%; height: 134.375px;\" border=\"1\"><colgroup><col style=\"width: 31.8448%;\"><col style=\"width: 14.9341%;\"><col style=\"width: 39.309%;\"><col style=\"width: 13.8389%;\"></colgroup>\n<tbody>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Name</td>\n<td style=\"height: 22.3958px;\">Type</td>\n<td style=\"height: 22.3958px;\">Value</td>\n<td style=\"height: 22.3958px;\">TTL</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">example.com</td>\n<td style=\"height: 22.3958px;\">A</td>\n<td style=\"height: 22.3958px;\">192.0.2.1</td>\n<td style=\"height: 22.3958px;\">300</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">example.com</td>\n<td style=\"height: 22.3958px;\">AAAA</td>\n<td style=\"height: 22.3958px;\">2001:db8::1</td>\n<td style=\"height: 22.3958px;\">300</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">www.example.com</td>\n<td style=\"height: 22.3958px;\">CNAME</td>\n<td style=\"height: 22.3958px;\">example.com</td>\n<td style=\"height: 22.3958px;\">300</td>\n</tr>\n<tr style=\"height: 44.7917px;\">\n<td style=\"height: 44.7917px;\">example.com</td>\n<td style=\"height: 44.7917px;\">NS</td>\n<td style=\"height: 44.7917px;\">ns-123.awsdns-45.com.</td>\n<td style=\"height: 44.7917px;\">-</td>\n</tr>\n</tbody>\n</table>\n</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "Route 53"
+          ]
+        },
+        {
+          "id": "1758968407088",
+          "question": "Route 53 DNS Records",
+          "answer": "<ul>\n<li>Contains\n<ul>\n<li><strong>Domain/Subdomain name</strong>:\n<ul>\n<li>Domain: hostnamee.g. example.com</li>\n<li>Subdomain: e.g. api.example.com</li>\n</ul>\n</li>\n<li><strong>Record Type</strong>: A, AAAA, CNAME, NS</li>\n<li><strong>Value</strong>: IPv4, IPv6, domain/subdomain names</li>\n<li><strong>Routing Policy</strong></li>\n<li><strong>TTL</strong>: Required (except for NS record type)</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "Route 53"
+          ]
+        },
+        {
+          "id": "1758974296857",
+          "question": "Route 53 Hosted Zone",
+          "answer": "<ul>\n<li>Container for records of specific domain</li>\n<li>Contain all DNS records related to domain and its subdomain</li>\n<li>Public Hosted Zone\n<ul>\n<li>Manage DNS records for domain accessible over the public internet</li>\n<li>Publicly resolvable worldwide</li>\n</ul>\n</li>\n<li>Private Hosted Zone\n<ul>\n<li>Manage DNS records for domain within one or more VPC</li>\n<li>Only resolvable within VPC</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "Route 53"
+          ]
+        },
+        {
+          "id": "1759000097015",
+          "question": "Route 53 CNAME vs Alias",
+          "answer": "<p>CNAME</p>\n<ul>\n<li>&nbsp;Maps subdomain to another domain name (not IP address)</li>\n<li>Can only be used on subdomain</li>\n</ul>\n<p>ALIAS</p>\n<ul>\n<li>Maps domain/subdomain name to AWS resources</li>\n<li>Can be used on domain &amp; subdomain</li>\n<li>Use record types (A or AAAA)</li>\n<li>Automatically assigned by AWS</li>\n<li>Can only point to AWS managed resources\n<ul>\n<li>EC2 doesnt have stable DNS name</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "Route 53"
+          ]
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "cloud",
+    "aws",
+    "demo",
+    "iam",
+    "ec2",
+    "AWS",
+    "IAM",
+    "EC2",
+    "Concept",
+    "Compare",
+    "Security Group",
+    "Network",
+    "Instance Store",
+    "EBS",
+    "EFS",
+    "ELB",
+    "ALB",
+    "NLB",
+    "GWLB",
+    "ASG",
+    "RDS",
+    "Aurora",
+    "ElastiCache",
+    "Route 53"
+  ]
+}
