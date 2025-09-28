@@ -3,7 +3,8 @@ const low = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
 
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
+
 
 const adapter = new FileSync('db.json');
 const db = low(adapter);
@@ -73,5 +74,6 @@ app.delete('/decks/:deckId/cards/:cardId', (req, res) => {
 app.get('/tags', (req, res) => {
   res.json(db.get('tags').value());
 });
-
-app.listen(port, () => console.log(`Server running at http://localhost:${port}`));
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
