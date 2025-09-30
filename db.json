@@ -696,6 +696,53 @@
             "Concept",
             "Route 53"
           ]
+        },
+        {
+          "id": "1759218703950",
+          "question": "Route 53 Routing Policies",
+          "answer": "<ul>\n<li>Simple\n<ul>\n<li>Typically route traffic to single resource</li>\n<li>Can have multiple values for same record, will return one at random</li>\n<li>For Alias, only one AWS resource</li>\n<li>Cannot use Health Check</li>\n</ul>\n</li>\n<li>Weighted\n<ul>\n<li>Control % of request that go to each resource</li>\n<li>Same Name, different values, and their weight</li>\n<li>Assign weight to each record, distribute based on weight proportion</li>\n<li>Weight =0 -&gt; no traffic is sent to that resource</li>\n<li>Can use Health Check</li>\n</ul>\n</li>\n<li>Failover\n<ul>\n<li>Will only be redirected when primary records failed health checks</li>\n</ul>\n</li>\n<li>Latency based\n<ul>\n<li>Redirect to resource with lowest latency</li>\n<li>Can use Health Check</li>\n</ul>\n</li>\n<li>Geolocation\n<ul>\n<li>Based on user location</li>\n<li>Should create default record</li>\n<li>Can use Health Check</li>\n</ul>\n</li>\n<li>Multi-Value Answer\n<ul>\n<li>Route 53 return multiple values for each DNS query</li>\n<li>Client choose which IP to use</li>\n<li>Return up to 8 records</li>\n<li>Can use Health Check (Only return values that are healthy)</li>\n</ul>\n</li>\n<li>Geoproximity\n<ul>\n<li>Based on geographic location of users and resources</li>\n<li>shift traffic based on bias</li>\n<li>Positive bias -&gt; more traffic, vice versa</li>\n<li>Must use Route 53 Traffic Flow</li>\n</ul>\n</li>\n<li>IP-Based\n<ul>\n<li>Based on client's IP addresses</li>\n<li>List of CIDRs</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "Route 53"
+          ]
+        },
+        {
+          "id": "1759220299480",
+          "question": "Route 53 Health Checks",
+          "answer": "<ul>\n<li>HTTP Health Checks are only for public resources</li>\n<li>Cannot access private enpoints (VPC, On-prem)</li>\n<li>Health Response: 2XX or 3XX</li>\n<li>Configure router/firewall to allow request from Route 53 Health Checkers</li>\n<li>Acts as Automated DNS Failover\n<ol>\n<li>Monitor an Endpoint\n<ul>\n<li>15 Health Checkers globally</li>\n<li>Check in 30 seconds interval</li>\n<li>Support HTTP/HTTPS/TCP</li>\n<li>3 consecutive passes/fails to mark resource</li>\n</ul>\n</li>\n<li>Monitor other Health Checks (Calculated Health Checks)\n<ul>\n<li>Combine results of multiple Health Checks into 1 Health Checks</li>\n<li>Use OR, AND, NOT</li>\n</ul>\n</li>\n<li>Monitor CloudWatch Alarms\n<ul>\n<li>Create CloudWatch Metric &amp; ClouWatch Alarm on private resources</li>\n<li>Use Health Check to check the alarm</li>\n</ul>\n</li>\n</ol>\n</li>\n<li>Integrated with CloudWatch metrics&nbsp;</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "Route 53"
+          ]
+        },
+        {
+          "id": "1759220473361",
+          "question": "Domain Registar",
+          "answer": "<ul>\n<li>Route 53 can manage DNS records from 3rd party domain registar\n<ol>\n<li>Create Hosted Zone in Route 53</li>\n<li>Update NS Records on 3rd party website to use Route53 Name Servers</li>\n</ol>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "Network",
+            "Route 53"
+          ]
+        },
+        {
+          "id": "1759224971057",
+          "question": "Elastic Beanstalk",
+          "answer": "<ul>\n<li>Developer centric view of deploying application on AWS</li>\n<li>Automatically handle capacity provisioning, load balancing, etc</li>\n<li>Developer only responsible for application code</li>\n<li>Full control of configuration</li>\n<li>Free - Pay for underlying instances</li>\n<li>Components\n<ul>\n<li><strong>Application:&nbsp;</strong>\n<ul>\n<li>Logical container for application code, versions, environments</li>\n</ul>\n</li>\n<li><strong>Application Version:</strong>\n<ul>\n<li>Version of web application code</li>\n</ul>\n</li>\n<li><strong>Environment</strong>\n<ul>\n<li>Running instance of app with resources like EC2, RDS, etc.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>",
+          "tags": [
+            "Concept",
+            "Elastic Beanstalk"
+          ]
+        },
+        {
+          "id": "1759226600126",
+          "question": "Elastic Beanstalk Web Server Tier VS Worker Tier",
+          "answer": "<table style=\"border-collapse: collapse; width: 100%; height: 134.375px;\" border=\"1\"><colgroup><col style=\"width: 33.3333%;\"><col style=\"width: 33.3333%;\"><col style=\"width: 33.3333%;\"></colgroup>\n<tbody>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">&nbsp;</td>\n<td style=\"height: 22.3958px;\">Web Server Tier</td>\n<td style=\"height: 22.3958px;\">Worker Tier</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">Purpose</td>\n<td style=\"height: 22.3958px;\">Handles HTTP(S) requests from users</td>\n<td style=\"height: 22.3958px;\">Handles background tasks</td>\n</tr>\n<tr style=\"height: 44.7917px;\">\n<td style=\"height: 44.7917px;\">Traffic</td>\n<td style=\"height: 44.7917px;\">Responds directly to user HTTP request</td>\n<td style=\"height: 44.7917px;\">Does not handle HTTP request, process task from SQS queues</td>\n</tr>\n<tr style=\"height: 22.3958px;\">\n<td style=\"height: 22.3958px;\">AWS Service for Ingestion</td>\n<td style=\"height: 22.3958px;\">Elastic Load Balancing (ELB)</td>\n<td style=\"height: 22.3958px;\">Simple Queue Service (SQS)</td>\n</tr>\n</tbody>\n</table>",
+          "tags": [
+            "Concept",
+            "Compare",
+            "Elastic Beanstalk"
+          ]
         }
       ]
     }
@@ -724,6 +771,7 @@
     "RDS",
     "Aurora",
     "ElastiCache",
-    "Route 53"
+    "Route 53",
+    "Elastic Beanstalk"
   ]
 }
